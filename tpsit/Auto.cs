@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace tpsit
 {
-    class Auto
+    public class Auto : Veicolo
     {
+        public int NumeroPorte { get; set; }
+
+        public Auto(string marca, string modello, int anno, int numeroPorte)
+            : base(marca, modello, anno)
+        {
+            NumeroPorte = numeroPorte;
+        }
+
+        // Override del metodo base
+        public override void MostraDettagli()
+        {
+            Console.WriteLine($"Auto: {Marca} {Modello}, Anno: {Anno}, Porte: {NumeroPorte}");
+        }
     }
+
 }
