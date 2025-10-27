@@ -18,7 +18,8 @@ namespace tpsit
 
         public override void MostraDettagli()
         {
-            Console.WriteLine($"Moto: {Marca} {Modello}, Anno: {Anno}, Cilindrata: {Cilindrata}cc");
+            Console.WriteLine($"Moto: {Marca} {Modello}, Anno: {Anno}, Cilindrata: {Cilindrata}cc");;
+   
         }
     }
 }
